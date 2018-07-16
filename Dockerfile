@@ -45,7 +45,7 @@ RUN mkdir /home/Dropoff
 RUN mkdir /home/Error
 RUN chown mirth /home/Pickup /home/Dropoff /home/Error /opt/mirth-connect/custom-lib1 
 
-EXPOSE 8080 8443 8002
+EXPOSE 8080 8443
 
 COPY docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
