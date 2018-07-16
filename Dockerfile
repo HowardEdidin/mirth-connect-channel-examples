@@ -39,11 +39,11 @@ VOLUME /var/spool/mirth
 # ----
 
 # create directories to store/manage HL7 messages
-RUN mkdir /opt/mirth-connect/custom-lib 
+RUN mkdir /opt/mirth-connect/custom-lib1 
 RUN mkdir /home/Pickup
 RUN mkdir /home/Dropoff
 RUN mkdir /home/Error
-RUN chown mirth /home/Pickup /home/Dropoff /home/Error /opt/mirth-connect/custom-lib 
+RUN chown mirth /home/Pickup /home/Dropoff /home/Error /opt/mirth-connect/custom-lib1 
 
 EXPOSE 8080 8443
 
