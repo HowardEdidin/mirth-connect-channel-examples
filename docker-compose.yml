@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   mirth-database:
@@ -23,8 +23,6 @@ services:
       - "./custom_lib:/opt/mirth-connect/custom-lib1:rw"
     ports: 
       - "8080:8080"
-      - "8443:8443"
-    links:
-      - mirth-database:mysql
+      - "8443:8443"   
     depends_on:
       - mirth-database
